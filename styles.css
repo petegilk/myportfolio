@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(10,25,47);
+  min-height: 100vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -40,10 +43,23 @@ body {
 }
 
 #nav-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: white;
+  font-size: 60px;
+  font-family: 'Stick No Bills', sans-serif;
+  position: relative;
+  color: rgb(200,35,55);
+}
+
+#nav-logo2 {
+  position: absolute;
+  font-size: 60px;
+  font-family: 'Stick No Bills', sans-serif;
+  color: white;
+  left: 4px;
+  transition: ease-out 500ms;
+}
+
+#nav-logo2:hover {
+  left: 15px;
 }
 
 #nav-list {
@@ -60,44 +76,67 @@ body {
 }
 
 .list-item {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.list-item::before {
+/* .list-item::before {
   content: '';
   width: 5px;
   height: 5px;
   background-color: red;
   bottom: 0;
-}
+} */
 
-.list-item::after {
+/* .list-item::after {
   content: '';
   width: 5px;
   height: 5px;
   background-color: red;
   display: block;
   bottom: 0;
-}
+} */
 
 .list-item a {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: white;
+  font-size: 18px;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease 250ms;
+}
+
+.list-item a:hover {
+  color: rgb(170, 225, 255);
 }
 
 .contact-links {
   /* border: 1px solid white; */
-  color: white;
   position: fixed;
   left: 0;
   top: 40%;
+}
+
+.link-item {
+  height: 40px;
+  width: 200px;
+  padding: 0 10px;
+  justify-content: space-between;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  /* border: 1px solid green; */
+  position: relative;
+  left: -150px;
+  transition: all 400ms ease;
+}
+
+.link-item:hover {
+  left: 0;
 }
 
 .link-item:nth-child(1) {
@@ -114,20 +153,4 @@ body {
 
 .link-item:nth-child(4) {
   background-color: rgb(200,35,55);
-}
-
-.link-item {
-  height: 40px;
-  width: 200px;
-  padding: 0 20px;
-  justify-content: space-between;
-  font-weight: 600;
-  /* border: 1px solid green; */
-  position: relative;
-  left: -150px;
-  transition: all 400ms ease;
-}
-
-.link-item:hover {
-  left: 0;
 }
