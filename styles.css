@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,500;1,400;1,500&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -35,18 +36,37 @@ body {
 #navbar {
   width: 100vw;
   height: 80px;
-  border-bottom: 2px solid rgb(200,35,55);
+  border-bottom: 2px solid rgb(10,25,47);
   background-color: rgb(47,76,121);
   justify-content: space-between;
   padding: 0px 40px;
   /* position: fixed; */
 }
 
+.nav-border {
+  height: 2px;
+  background-color: rgb(215,171,97);
+  width: 100vw;
+}
+
+.nav-border1 {
+  height: 2px;
+  background-color: rgb(224,98,54);
+  width: 100vw;
+}
+
+.nav-border2 {
+  height: 2px;
+  background-color: rgb(200,35,55);
+  width: 100vw;
+}
+
 #nav-logo {
   font-size: 60px;
   font-family: 'Stick No Bills', sans-serif;
   position: relative;
-  color: rgb(200,35,55);
+  color: rgb(10,25,47);
+  transition: ease-out 500ms;
 }
 
 #nav-logo2 {
@@ -54,12 +74,13 @@ body {
   font-size: 60px;
   font-family: 'Stick No Bills', sans-serif;
   color: white;
-  left: 4px;
+  left: 5px;
   transition: ease-out 500ms;
 }
 
 #nav-logo2:hover {
-  left: 15px;
+  left: 20px;
+  cursor: context-menu;
 }
 
 #nav-list {
@@ -154,3 +175,4 @@ body {
 .link-item:nth-child(4) {
   background-color: rgb(200,35,55);
 }
+
