@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(10,25,47);
   min-height: 100vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -35,30 +40,13 @@ body {
 
 #navbar {
   width: 100vw;
-  height: 80px;
+  /* height: 80px; */
+  height: 6rem;
   border-bottom: 2px solid rgb(10,25,47);
   background-color: rgb(47,76,121);
   justify-content: space-between;
   padding: 0px 40px;
   /* position: fixed; */
-}
-
-.nav-border {
-  height: 2px;
-  background-color: rgb(215,171,97);
-  width: 100vw;
-}
-
-.nav-border1 {
-  height: 2px;
-  background-color: rgb(224,98,54);
-  width: 100vw;
-}
-
-.nav-border2 {
-  height: 2px;
-  background-color: rgb(200,35,55);
-  width: 100vw;
 }
 
 #nav-logo {
@@ -135,8 +123,16 @@ body {
   color: rgb(170, 225, 255);
 }
 
+.to-top {
+  border: 1px solid yellow;
+  color: white;
+  width: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+}
+
 .contact-links {
-  /* border: 1px solid white; */
   position: fixed;
   left: 0;
   top: 40%;
@@ -169,10 +165,45 @@ body {
 }
 
 .link-item:nth-child(3) {
-  background-color: rgb(224,98,54);
+  background-color: rgb(167, 74, 40);
 }
 
 .link-item:nth-child(4) {
-  background-color: rgb(200,35,55);
+  background-color: rgb(129, 24, 36);
 }
 
+#home {
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+#intro {
+  border-radius: 8px;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.094);
+  margin: 80px 100px;
+  padding: 20px 60px;
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.75);
+}
+
+#intro h4 {
+  color: white;
+  /* border: 1px solid red; */
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+#intro h1 {
+  color: white;
+  /* border: 1px solid green; */
+  margin: 0;
+  font-size: 4.5rem;
+}
+
+#about {
+  height: 100vh;
+  border: 1px solid red;
+  background-color: black;
+}
